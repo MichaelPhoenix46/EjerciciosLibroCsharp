@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace EjerciciosLibroCsharp.Chapter6
+namespace Ejercicios_del_5_8.cap_6
 {
-    class ejercicios1_2_3_4_5
+    class ejercicios
     {
         public void cap6_1()
         {
