@@ -15,7 +15,11 @@ namespace Ejercicios_del_5_8
 
         public static void Main(string[] args)
         {
-            Console.Write("1.Cap 5\n2.Cap 6\n3.Cap 7\n4.Cap 8\nDigite El Capitulo Deceado: ");
+            Console.Write("1.Cap 5\n" +
+                "2.Cap 6\n" +
+                "3.Cap 7\n" +
+                "4.Cap 8\n" +
+                "Digite El Capitulo Deceado: ");
             int num = int.Parse(Console.ReadLine());
 
             switch (num)

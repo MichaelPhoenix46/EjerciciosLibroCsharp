@@ -7,14 +7,13 @@ namespace Ejercicios_del_5_8.Cap_5
 {
     public class Ejercicio_4_5
     {
-
-
         public void Menu()
         {
             Console.Clear();
-            Console.Write("4.Ejercicio 4\n5.Ejercicio 5\nDigite la Opcion Deceada: ");
+            Console.Write("4.Ejercicio 4\n" +
+                "5.Ejercicio 5\n" +
+                "Digite la Opcion Deceada: ");
             int n = int.Parse(Console.ReadLine());
-
             if (n == 4 || n == 5)
             {
                 switch (n)
@@ -22,15 +21,13 @@ namespace Ejercicios_del_5_8.Cap_5
                     case 4:
                         Console.Clear();
                         Console.WriteLine("Factorial De un Numero Ejercicio 4 del Cap 5");
-                        leerFactorial();
+                        LeerFactorial();
                         break;
-
                     case 5:
                         Console.Clear();
-                        Console.WriteLine("Cadena de Numeros Ejercicio 4 del Cap 5");
-                        leernumero();
+                        Console.WriteLine("Cadena de Numeros Ejercicio 5 del Cap 5");
+                        Leernumero();
                         break;
-
                 }
                
             }
@@ -41,24 +38,18 @@ namespace Ejercicios_del_5_8.Cap_5
         }
 
 
-        public void leerFactorial()
+        public void LeerFactorial()
         {
             int n;
             Console.WriteLine("Digite un Numero: ");
             n = int.Parse(Console.ReadLine());
-
             Factorial(n);
         }
 
         //Ejercicio 4
         public int Factorial(int n)
         {
-
-
             int r = 1;
-
-
-
             if (n < 2)
             {
                 Console.WriteLine("Factorial : 1");
@@ -69,8 +60,6 @@ namespace Ejercicios_del_5_8.Cap_5
                 {
                     r = r * i;
                 }
-
-
                 Console.WriteLine("Factorial: " + r);
             }
 
@@ -78,13 +67,11 @@ namespace Ejercicios_del_5_8.Cap_5
             return 0;
         }
 
-        public void leernumero()
+        public void Leernumero()
         {
 
-
             int numero;
-            Console.WriteLine("\nCadena de Numero Enteros del 1 al 100 s\n");
-
+            Console.WriteLine("\nNumero Enteros del 1 al 100 s\n");
             Console.Write("Digite Numero: ");
             numero = int.Parse(Console.ReadLine());
 
@@ -92,7 +79,7 @@ namespace Ejercicios_del_5_8.Cap_5
             {
                 Console.WriteLine("La Cadena de " + numero + " No Existe...");
                 Console.WriteLine("Intentelo de Nuevo");
-                leernumero();
+                Leernumero();
             }
             else
             {
@@ -111,7 +98,6 @@ namespace Ejercicios_del_5_8.Cap_5
                                                   "Cuarenta Y Uno","Cuarenta Y Dos","Cuarenta Y Tres", "Cuarenta Y Cuatro","Cuarenta Y Cinco",  "Cuarenta Y Seis", "Cuarenta Y Siete", "Cuarenta Y Ocho",  "Cuarenta Y Nueve",  "Cincuenta",  "Cincuenta Y Uno",  "Cincuenta Y Dos",  "Cincuenta Y Tres", "Cincuenta Y Cuatro",  "Cincuenta Y Cinco",  "Cincuenta Y Seis",  "Cincuenta Y Siete",  "Cincuenta Y Ocho",  "Cincuenta Y Nueve",  "Sesenta", "Sesenta Y Uno",
                                                   "Sesenta Y Dos",  "Sesenta Y Tres",  "Sesenta Y Cuatro",  "Sesenta Y Cinco",  "Sesenta Y Seis",  "Sesenta Y Siete",  "Sesenta Y Ocho"," Sesenta Y Nueve",  "Setenta", "Setenta Y Uno","Setenta Y Dos", "Setenta Y Tres","Setenta Y Cuatro","Setenta Y Cinco","Setenta Y Seis" , "Setenta Y Siete"," Setenta Y Ocho"," Setenta Y Nueve"," Ochenta",
                                                   "Ochenta Y Uno", "Ochenta Y Dos"," Ochenta Y Tres"," Ochenta Y Cuatro"," Ochenta Y Cinco"," Ochenta Y Seis"," Ochenta Y Siete", "Ochenta Y Ocho", "Ochenta Y Nueve", "Noventa"," Noventa Y Uno"," Noventa Y Dos"," Noventa Y Tres"," Noventa Y Cuatro",  "Noventa Y Cinco"," Noventa Y Seis"," Noventa Y Siete"," Noventa Y Ocho"," Noventa Y Nueve", "Cien"};
-
             Console.WriteLine("Cadena: " + numeroletra[numero]);
             Console.ReadKey();
         }

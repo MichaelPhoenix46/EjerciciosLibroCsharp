@@ -41,7 +41,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cap 5\Ejercicio 4,5.cs" />
-    <Compile Include="Cap 6\Ejercicios.cs" />
     <Compile Include="Cap 7\Ejercicio 1,2,5.cs" />
     <Compile Include="Cap 8\Ejercicios 3,5.cs" />
     <Compile Include="Program.cs" />
