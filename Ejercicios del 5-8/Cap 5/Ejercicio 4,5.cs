@@ -5,7 +5,6 @@ using System.Text;
 
 namespace Ejercicios_del_5_8.Cap_5
 {
-
     public class Ejercicio_4_5
     {
         public void Menu()
